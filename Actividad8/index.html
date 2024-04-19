@@ -6,8 +6,29 @@
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body{
+        background-color: bisque;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+      }
+      h1{
+        font-family: "Oleo Script", Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 40px;
+      }
+      model-viewer{
+        background-color: bisque;
+      }
+    </style>
   </head>
   <body>
+    <h1>A shiny cat</h1>
     <!-- <model-viewer> HTML element -->
     <model-viewer src="Dingus the cat.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
@@ -20,6 +41,9 @@
           <img src="ar_hand_prompt.png">
       </div>
     </model-viewer>  
+    <p><a href="https://poly.pizza/m/4dXgbKLHD9">Source: Dingus the cat</a></p>
+    <br>
+    <br>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
